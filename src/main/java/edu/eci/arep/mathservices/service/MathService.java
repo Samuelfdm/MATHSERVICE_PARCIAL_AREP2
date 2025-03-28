@@ -16,11 +16,9 @@ public class MathService {
         }
 
         response.add("1");
-        int size = (value/2)+1;
-        System.out.println("IMPAR: "+(value/2)+1);
-        System.out.println("PAR: "+(value/2));
-        for (int i = 2; i < size; i++) {
-            if (i%value==0){
+        int size = value/2;
+        for (int i = 2; i < size+1; i++) {
+            if (value%i==0){
                 response.add(String.valueOf(i));
             }
         }
